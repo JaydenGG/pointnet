@@ -60,9 +60,9 @@ HOSTNAME = socket.gethostname()
 
 # ModelNet40 official train/test split
 TRAIN_FILES = provider.getDataFiles( \
-    os.path.join(BASE_DIR, 'data/task_dataset/train_data.txt'))
+    os.path.join(BASE_DIR, 'data/task_dataset/train_files.txt'))
 TEST_FILES = provider.getDataFiles(\
-    os.path.join(BASE_DIR, 'data/task_dataset/test_data.txt'))
+    os.path.join(BASE_DIR, 'data/task_dataset/test_files.txt'))
 
 def log_string(out_str):
     LOG_FOUT.write(out_str+'\n')
