@@ -59,10 +59,10 @@ test_lebel=np.array(test_lebel)
 
 f = h5py.File('./train_data.h5','w')
 f['data'] = train_data
-f['labels'] = train_lebel
+f['label'] = train_lebel
 f.close()
 
 f = h5py.File('./test_data.h5','w')
 f['data'] = test_data
-f['labels'] = test_lebel
+f['label'] = test_lebel
 f.close()
